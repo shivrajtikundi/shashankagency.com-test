@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank Enterprises | Premium Products & Industrial Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #002366;
+            --accent: #FF8C00;
+            --purple-deep: #4c1d95;
+            --purple-light: #5b21b6;
+            --purple-form: #3b0764;
+            --form-input: rgba(88, 28, 135, 0.3);
+        }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .bg-purple-custom { background-color: var(--purple-deep); }
+        .bg-purple-card { background-color: var(--purple-light); }
+        .btn-gradient {
+            background: linear-gradient(90deg, #3b82f6 0%, #a855f7 100%);
+        }
+        .btn-contact-gradient {
+            background: linear-gradient(90deg, #a855f7 0%, #ec4899 100%);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.02); }
+        
+        /* Custom Input Styling to match image */
+        .contact-input {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .contact-input:focus {
+            background: rgba(255, 255, 255, 0.1);
+            outline: none;
+            border-color: #a855f7;
+        }
+        .contact-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-[#002366] p-2 rounded-lg">
+                        <i class="fas fa-industry text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-[#002366]">SHASHANK<span class="text-orange-500 font-light">ENTERPRISES</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-orange-500 transition">Home</a>
+                    <a href="#mission" class="hover:text-orange-500 transition">Mission</a>
+                    <a href="#products" class="hover:text-orange-500 transition">Products</a>
+                    <a href="#values" class="hover:text-orange-500 transition">Values</a>
+                    <a href="#contact" class="bg-[#002366] text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition">Contact Us</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-[#002366] text-2xl"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block px-4 py-1 rounded-full bg-purple-100 text-purple-700 font-semibold text-sm mb-6">
+                        Founded in 2024 • Premium Quality Guaranteed
+                    </span>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-[#002366] leading-tight mb-6">
+                        Curating <span class="text-purple-600">Excellence</span> for your Lifestyle.
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        We scour the globe to find items that blend functionality with beautiful design, ensuring every product meets our rigorous standards.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#products" class="px-8 py-4 bg-purple-600 text-white rounded-xl font-bold text-center shadow-lg hover:bg-purple-700 transition">Browse Store</a>
+                        <a href="#contact" class="px-8 py-4 border-2 border-purple-600 text-purple-600 rounded-xl font-bold text-center hover:bg-purple-50 transition">Contact Us</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800" alt="Showcase" class="rounded-3xl shadow-2xl relative z-10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="py-24 bg-purple-custom text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8">Our Mission</h2>
+                    <p class="text-xl text-purple-100 leading-relaxed mb-6">
+                        Founded in 2024, our store began with a simple idea: that shopping for premium products should be an experience, not just a transaction. We scour the globe to find items that blend functionality with beautiful design.
+                    </p>
+                    <p class="text-lg text-purple-200 leading-relaxed mb-10">
+                        We believe in sustainability, quality, and customer satisfaction above all else. Every product in our catalog is hand-picked and tested by our team to ensure it meets our rigorous standards.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-6">
+                        <div class="bg-purple-card/40 p-6 rounded-2xl border border-purple-400/30 w-full sm:w-48">
+                            <div class="text-4xl font-bold mb-1">5k+</div>
+                            <div class="text-purple-200 text-sm">Happy Customers</div>
+                        </div>
+                        <div class="bg-purple-card/40 p-6 rounded-2xl border border-purple-400/30 w-full sm:w-48">
+                            <div class="text-4xl font-bold mb-1">100%</div>
+                            <div class="text-purple-200 text-sm">Quality Guarantee</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border border-purple-400/20">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="The Creative Team" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent">
+                            <h4 class="text-2xl font-bold">The Creative Team</h4>
+                            <p class="text-purple-200">Working hard to bring you the best.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Catalog -->
+    <section id="products" class="py-24 bg-purple-custom">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Latest Arrivals</h2>
+                <div class="h-1 w-20 bg-purple-400 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Products -->
+                <div class="bg-purple-card rounded-xl overflow-hidden shadow-lg hover-scale flex flex-col group">
+                    <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&q=80&w=400" alt="Cap" class="h-56 w-full object-cover">
+                    <div class="p-6 text-white flex-grow">
+                        <h4 class="text-xl font-bold mb-1">Light Blue Baseball Cap</h4>
+                        <p class="text-sm text-purple-200 mb-6">Classic style, modern color</p>
+                        <button class="w-full py-3 btn-gradient text-white rounded-lg font-bold flex items-center justify-center gap-2">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-purple-card rounded-xl overflow-hidden shadow-lg hover-scale flex flex-col group">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=400" alt="Serum" class="h-56 w-full object-cover">
+                    <div class="p-6 text-white flex-grow">
+                        <h4 class="text-xl font-bold mb-1">Face Serum</h4>
+                        <p class="text-sm text-purple-200 mb-6">Check out this amazing product!</p>
+                        <button class="w-full py-3 btn-gradient text-white rounded-lg font-bold flex items-center justify-center gap-2">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-purple-card rounded-xl overflow-hidden shadow-lg hover-scale flex flex-col group">
+                    <img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&q=80&w=400" alt="Vase" class="h-56 w-full object-cover">
+                    <div class="p-6 text-white flex-grow">
+                        <h4 class="text-xl font-bold mb-1">Handmade Vase</h4>
+                        <p class="text-sm text-purple-200 mb-6">Check out this amazing product!</p>
+                        <button class="w-full py-3 btn-gradient text-white rounded-lg font-bold flex items-center justify-center gap-2">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-purple-card rounded-xl overflow-hidden shadow-lg hover-scale flex flex-col group">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400" alt="Soap" class="h-56 w-full object-cover">
+                    <div class="p-6 text-white flex-grow">
+                        <h4 class="text-xl font-bold mb-1">Hand Soap</h4>
+                        <p class="text-sm text-purple-200 mb-6">Check out this amazing product!</p>
+                        <button class="w-full py-3 btn-gradient text-white rounded-lg font-bold flex items-center justify-center gap-2">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Based on Image 5293ce) -->
+    <section id="contact" class="py-24 bg-purple-custom">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-8">
+                
+                <!-- Left: Contact Form -->
+                <div class="bg-purple-card/20 border border-purple-400/20 rounded-[2rem] p-8 md:p-12 shadow-2xl">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-purple-200 text-sm mb-2">Name</label>
+                                <input type="text" placeholder="Your Name" class="contact-input w-full px-4 py-3 rounded-lg">
+                            </div>
+                            <div>
+                                <label class="block text-purple-200 text-sm mb-2">Email</label>
+                                <input type="email" placeholder="your@email.com" class="contact-input w-full px-4 py-3 rounded-lg">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-purple-200 text-sm mb-2">Subject</label>
+                            <input type="text" placeholder="How can we help?" class="contact-input w-full px-4 py-3 rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-purple-200 text-sm mb-2">Message</label>
+                            <textarea rows="5" placeholder="Tell us more about your inquiry..." class="contact-input w-full px-4 py-3 rounded-lg"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 btn-contact-gradient text-white font-bold rounded-lg shadow-xl hover:opacity-90 transition flex items-center justify-center gap-3">
+                            <i class="fas fa-paper-plane text-sm"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Contact Info & Map -->
+                <div class="space-y-6">
+                    <!-- Contact Cards -->
+                    <div class="bg-purple-card/20 border border-purple-400/20 rounded-2xl p-6 flex items-center gap-6 hover:bg-purple-card/30 transition group">
+                        <div class="w-14 h-14 bg-purple-500/30 rounded-2xl flex items-center justify-center border border-purple-400/20 group-hover:bg-purple-500/50 transition">
+                            <i class="fas fa-envelope text-purple-300 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-lg">Email Us</h4>
+                            <p class="text-purple-300 text-sm">shashankagencyhzb@gmail.com</p>
+                            <p class="text-purple-400 text-xs mt-1">We reply within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-card/20 border border-purple-400/20 rounded-2xl p-6 flex items-center gap-6 hover:bg-purple-card/30 transition group">
+                        <div class="w-14 h-14 bg-purple-500/30 rounded-2xl flex items-center justify-center border border-purple-400/20 group-hover:bg-purple-500/50 transition">
+                            <i class="fas fa-phone text-purple-300 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-lg">Call Us</h4>
+                            <p class="text-purple-300 text-sm">07004872919</p>
+                            <p class="text-purple-400 text-xs mt-1">Mon-Fri, 9am-6pm EST</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-card/20 border border-purple-400/20 rounded-2xl p-6 flex items-center gap-6 hover:bg-purple-card/30 transition group">
+                        <div class="w-14 h-14 bg-purple-500/30 rounded-2xl flex items-center justify-center border border-purple-400/20 group-hover:bg-purple-500/50 transition">
+                            <i class="fas fa-map-marker-alt text-purple-300 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-lg">Visit Us</h4>
+                            <p class="text-purple-300 text-sm">House No. 121, NH-100</p>
+                            <p class="text-purple-400 text-xs mt-1">Nutan Nagar Colony, Hazaribagh, Jharkhand 825303</p>
+                        </div>
+                    </div>
+
+                    <!-- Dark Map Placeholder -->
+                    <div class="rounded-3xl overflow-hidden border border-purple-400/20 h-64 relative group">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="Map" class="w-full h-full object-cover grayscale brightness-50 opacity-50">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20">
+                                <i class="fas fa-map-pin text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-black/40 backdrop-blur-md px-3 py-1 rounded-lg text-[10px] text-purple-200 font-mono tracking-widest uppercase">
+                            Global Supply Chain
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="py-24 bg-purple-custom text-white border-t border-purple-400/20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-purple-card/30 p-8 rounded-2xl border border-purple-400/20 hover:bg-purple-card/50 transition">
+                    <div class="w-12 h-12 bg-purple-500/30 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-purple-200"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Customer First</h4>
+                    <p class="text-purple-200 text-sm leading-relaxed">Your happiness is our top priority in everything we do.</p>
+                </div>
+                <div class="bg-purple-card/30 p-8 rounded-2xl border border-purple-400/20 hover:bg-purple-card/50 transition">
+                    <div class="w-12 h-12 bg-purple-500/30 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-award text-purple-200"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Premium Quality</h4>
+                    <p class="text-purple-200 text-sm leading-relaxed">We never compromise on the quality of our products.</p>
+                </div>
+                <div class="bg-purple-card/30 p-8 rounded-2xl border border-purple-400/20 hover:bg-purple-card/50 transition">
+                    <div class="w-12 h-12 bg-purple-500/30 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-purple-200"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Sustainability</h4>
+                    <p class="text-purple-200 text-sm leading-relaxed">Committed to eco-friendly practices and packaging.</p>
+                </div>
+                <div class="bg-purple-card/30 p-8 rounded-2xl border border-purple-400/20 hover:bg-purple-card/50 transition">
+                    <div class="w-12 h-12 bg-purple-500/30 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-purple-200"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Passion</h4>
+                    <p class="text-purple-200 text-sm leading-relaxed">We love what we do and it shows in our service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#00153d] text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-6">
+                <div class="bg-white p-2 rounded-lg"><i class="fas fa-industry text-[#00153d]"></i></div>
+                <span class="text-xl font-bold">SHASHANK<span class="text-orange-400">ENT.</span></span>
+            </div>
+            <p class="text-gray-400 text-sm max-w-md mx-auto mb-10">Founded in 2024. Elevating procurement through quality and innovation from Hazaribagh to the world.</p>
+            <div class="flex justify-center space-x-6 mb-10">
+                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="border-t border-white/5 pt-10 text-gray-500 text-xs">
+                &copy; 2026 Shashank Enterprises. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'hidden fixed inset-0 z-40 bg-white pt-24 px-6 space-y-6 flex flex-col items-center';
+        mobileMenu.innerHTML = `
+            <a href="#home" class="text-2xl font-bold">Home</a>
+            <a href="#mission" class="text-2xl font-bold">Mission</a>
+            <a href="#products" class="text-2xl font-bold">Products</a>
+            <a href="#values" class="text-2xl font-bold">Values</a>
+            <a href="#contact" class="text-2xl font-bold text-purple-600">Contact</a>
+        `;
+        document.body.appendChild(mobileMenu);
+        
+        menuBtn.onclick = () => {
+            mobileMenu.classList.toggle('hidden');
+        };
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.onclick = function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    mobileMenu.classList.add('hidden');
+                }
+            };
+        });
+    </script>
+</body>
+</html>
